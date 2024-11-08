@@ -1,7 +1,5 @@
 ## 说明
 远程lxd容器cpu环境ubuntu_xfce_xrdp_matlab
-默认普通用户名：newuser
-默认密码：666666
 
 ## 通过 SSH 使用公钥和私钥访问
 
