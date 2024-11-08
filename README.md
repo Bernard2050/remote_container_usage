@@ -75,10 +75,8 @@ ping <zerotier ip>
 
 容器内已安装了edge浏览器
 
-下载安装包,需要使用bjtu邮箱注册
-```url
-https://www.mathworks.com/downloads/
-```
+[下载安装包](https://www.mathworks.com/downloads/),需要使用bjtu邮箱注册
+
 <img src="pics\download_matlab_packge.png" alt="示例图片" width="800"/>
 
 解压安装包，默认下载路径为/home/newuser/Downloads/
@@ -106,6 +104,31 @@ cd /home/newuser/Downloads/matlab_R2024b_Linux/
 ```
 
 <img src="pics\start_install.png" alt="示例图片" width="800"/>
+
+制作启动图标
+
+```
+sudo vim /usr/share/applications/matlab.desktop
+```
+按下I进入Insert
+```
+I
+```
+输入
+```
+Type=Application
+Name=Matlab
+GenericName=Matlab 2021a
+Comment=Matlab:The Language of Technical Computing
+Exec=/home/newuser/MATLAB/R2024b/bin/matlab -desktop
+Icon=/home/newuser/MATLAB/R2024b/toolbox/shared/hwconnectinstaller/resources/MatlabIcon.png
+Categories=Application;Matlab;
+```
+保存并提出
+```
+:wq
+```
+/usr/share/applications可以看到启动图标
 
 ## 本地matlab通过ssh调用远程主机
 
